@@ -1,0 +1,14 @@
+CROSS_COMPILE=
+CC = $(TIGCC)/bin/tigcc
+ASM = $(TIGCC)/bin/tigcc
+AR = $(TIGCC)/bin/tigcc
+LINKER = $(TIGCC)/bin/tigcc
+PLATFORM = 68000
+export PLATFORM
+CC_OPT = -c -g -Os -fno-strict-aliasing -fomit-frame-pointer -fno-stack-protector -fno-PIC -fno-builtin -mno-bss  -Wall -I../include -I../include/ti92p
+ASM_OPT = -o
+# copied in from kernel tree
+
+clean:
+	rm -rf *.o *.asm *.sym *.lst *.lib *~ 
+

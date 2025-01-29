@@ -14,20 +14,3 @@ int memcmp(const void* a, const void* b, size_t n)
   }
   return 0;
 }
-
-void *memset(void* d, int c, size_t sz)
-{
-  unsigned char *p = d;
-  while(sz--)
-    *p++ = c;
-  return d;
-}
-
-void *memcpy(void* d, const void* s, size_t sz)
-{
-  unsigned char *dp = d;
-  const unsigned char *sp = s;
-  while(sz--)
-    *dp++=*sp++;
-  return d;
-}

@@ -41,7 +41,14 @@ You will also need to copy the 0104 signing key from rabbitsign into `Kernel/pla
 Before flashing anything on your real device, you should check that the image is working fine with [ti92p-emu] :)
 
 
+
+## Acknowledgment
+
+This work is heavily based on the [punix] kernel, published under the GPL2 licence.
+
+
 [gcc4ti]: https://github.com/debrouxl/gcc4ti
 [freeflash]: https://www.ticalc.org/archives/files/fileinfo/368/36829.html
 [rabbitsign]: https://www.ticalc.org/archives/files/fileinfo/383/38392.html
 [ti92p-emu]: https://tiplanet.org/pad_ti68k_emu/
+[punix]: https://github.com/abbrev/punix

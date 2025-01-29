@@ -1,3 +1,6 @@
+#ifndef _TYPES_H_
+#define _TYPES_H_
+
 typedef signed char int8_t;
 typedef short int16_t;
 typedef long int32_t;
@@ -23,3 +26,7 @@ typedef uint32_t uptr_t;		/* User pointer equivalent */
 
 #define MAXUSIZE	0xFFFFFFFF
 
+typedef int pid_t;
+typedef unsigned short dev_t;
+
+#endif

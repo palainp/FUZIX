@@ -45,9 +45,19 @@ struct globals {
 	int onkey; /* set to 1 when ON key is pressed. see entry.s */
 	int powerstate; /* set to 1 when power is off. see entry.s */
 
+	unsigned long loadavg[3];
+	/*
+	 * Note: we *could* use realtime_mono as the uptime clock and get rid
+	 * of the uptime variable. Both clocks count up the same way.
+	 */
+	struct timespec _uptime;
+	long _loadavtime;
 
 	struct callout callout[NCALL];
 	masklock calloutlock;
+
+	struct list_head avbuf_list; /* list of available buf */
+	int numbufs;
 
 	int contrast;
 

@@ -59,18 +59,19 @@ void cpupoweroff()
 }
 
 
+
 int start(void)
 {
     size_t i;
     char hello[] = "hello world.\n";
 
-    // di();
     lcd_set_contrast(CONTRASTMAX/2);
     meminit();
-//    vtinit();
 
     for(i=0; i<13; ++i)
         kputchar(hello[i]);
 
+	G.seconds = realtime.tv_sec;
+	uptime.tv_sec = uptime.tv_nsec = 0;
     return 0;
 }

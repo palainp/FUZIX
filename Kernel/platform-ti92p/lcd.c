@@ -17,3 +17,18 @@ int lcd_set_contrast(int cont)
 	G.contrast = cont;
 	return cont;
 }
+
+int lcd_inc_contrast()
+{
+	return lcd_set_contrast(G.contrast+1);
+}
+
+int lcd_dec_contrast()
+{
+	return lcd_set_contrast(G.contrast-1);
+}
+
+int lcd_reset_contrast()
+{
+	return lcd_set_contrast(G.contrast);
+}

@@ -14,3 +14,8 @@ void outchar(void)
 {
     
 }
+
+void vtrint(dev_t dev, int ch)
+{
+
+}

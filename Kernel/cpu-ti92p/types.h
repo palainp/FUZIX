@@ -28,5 +28,6 @@ typedef uint32_t uptr_t;		/* User pointer equivalent */
 
 typedef int pid_t;
 typedef unsigned short dev_t;
+typedef int masklock;
 
 #endif

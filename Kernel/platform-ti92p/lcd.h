@@ -1,6 +1,10 @@
 #ifndef _LCD_H
 #define _LCD_H
 
+#define LCD_ROW_SYNC (*(volatile char *)0x60001c)
+#define LCD_CONTRAST (*(volatile char *)0x60001d)
+#define LCD_CONTROL  (*(volatile char *)0x70001d)
+
 #define LCD_MEM		((volatile char *)0x4c00)
 #define LCD_INCY	30
 
